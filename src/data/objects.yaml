@@ -1,0 +1,172 @@
+# - id: "tick"
+#   name: "Tick"
+#   image: "tick.avif"
+#   hotkeys:
+#     - x
+#   tags: ["ground", "armada", "t1", "unit", "bot"]
+
+# T1 Eco
+- id: "energy_converter_t1"
+  name: "Energy Converter T1"
+  image: "energy_converter_t1.avif"
+  hotkeys: ["z", "a"]
+  tags: ["building", "t1", "economy", "energy"]
+
+- id: "energy_storage_t1"
+  name: "Energy Storage"
+  image: "energy_storage_t1.avif"
+  hotkeys: ["z", "q"]
+  tags: ["building", "t1", "economy", "energy"]
+
+- id: "metal_storage_t1"
+  name: "Metal Storage"
+  image: "metal_storage_t1.avif"
+  hotkeys: ["z", "w"]
+  tags: ["building", "t1", "economy", "metal"]
+
+- id: "solar_t1"
+  name: "Solar T1"
+  image: "solar_t1.avif"
+  hotkeys: ["z", "x"]
+  tags: ["building", "t1", "economy", "energy"]
+
+- id: "wind_turbine"
+  name: "Wind Turbine"
+  image: "wind_turbine.avif"
+  hotkeys: ["z", "c"]
+  tags: ["building", "t1", "economy", "energy"]
+
+- id: "advanced_solar"
+  name: "Advanced Solar"
+  image: "advanced_solar.avif"
+  hotkeys: ["z", "v"]
+  tags: ["building", "t1", "economy", "energy"]
+
+# T1 Combat
+- id: "offshore_torpedo_t1"
+  name: "Offshore Torpedo T1"
+  image: "anemone.avif"
+  hotkeys: ["x", "q"]
+  tags: ["building", "t1", "combat", "torpedo"]
+
+- id: "artillery_t1"
+  name: "Artillery T1"
+  image: "gauntlet.avif"
+  hotkeys: ["x", "w"]
+  tags: ["building", "t1", "combat", "artillery"]
+
+- id: "aa_t1"
+  name: "Anti Air T1"
+  image: "nettle.avif"
+  hotkeys: ["x", "a"]
+  tags: ["building", "t1", "combat", "anti-air"]
+
+- id: "ferret"
+  name: "Anti Air Missile Battery"
+  image: "ferret.avif"
+  hotkeys: ["x", "s"]
+  tags: ["building", "t1", "combat", "anti-air", "legion"]
+
+- id: "chainsaw"
+  name: "Long Range Anti Air T1"
+  image: "chainsaw.avif"
+  hotkeys: ["x", "d"]
+  tags: ["building", "t1", "combat", "anti-air", "legion"]
+
+- id: "light_laser_tower"
+  name: "Light Laser Tower"
+  image: "sentry.avif"
+  hotkeys: ["x", "z"]
+  tags: ["building", "t1", "combat", "laser", "light"]
+
+- id: "beam_laser_tower"
+  name: "Bean Laser Turret"
+  image: "beamer.avif"
+  hotkeys: ["x", "x"]
+  tags: ["building", "t1", "combat", "laser"]
+
+- id: "dragons_claw"
+  name: "Pop-up Lightning Turret"
+  image: "dragons_claw.avif"
+  hotkeys: ["x", "v"]
+  tags: ["building", "t1", "combat", "fortification"]
+
+- id: "area_control_laser"
+  name: "Area Control Laser"
+  image: "overwatch.avif"
+  hotkeys: ["x", "c"]
+  tags: ["building", "t1", "combat", "laser"]
+
+# T1 Utility
+- id: "juno"
+  name: "Juno"
+  image: "juno.avif"
+  hotkeys: ["c", "q"]
+  tags: ["building", "t1", "utility", "anti-radar", "anti-spam", "anti-minefield"]
+
+- id: "radar_t1"
+  name: "Radar T1"
+  image: "radar_t1.avif"
+  hotkeys: ["c", "z"]
+  tags: ["building", "t1", "utility", "radar"]
+
+- id: "camera"
+  name: "Camera"
+  image: "beholder.avif"
+  hotkeys: ["c", "x"]
+  tags: ["building", "t1", "utility"]
+
+- id: "fortification_t1"
+  name: "Fortification"
+  image: "dragons_teeth.avif"
+  hotkeys: ["c", "c"]
+  tags: ["building", "t1", "utility", "fortification"]
+
+- id: "radar_jammer_t1"
+  name: "Radar Jammer T1"
+  image: "radar_jammer.png"
+  hotkeys: ["c", "v"]
+  tags: ["building", "t1", "utility", "radar-jammer"]
+
+# T1 Building
+- id: "construction_turret"
+  name: "Construction Turret"
+  image: "construction_turret.avif"
+  hotkeys: ["v", "a"]
+  tags: ["building", "t1", "build", "bp"]
+
+- id: "hovercraft_platform"
+  name: "Hovercraft Platform"
+  image: "hovercraftplatform.avif"
+  hotkeys: ["v", "q"]
+  tags: ["building", "t1", "build", "factory", "hovercraft"]
+
+- id: "advanced_botlab"
+  name: "Advanced Bot Lab"
+  image: "advancedbotlab.avif"
+  hotkeys: ["v", "s"]
+  tags: ["building", "t2", "build", "factory"]
+
+- id: "botlab"
+  name: "Bot Lab"
+  image: "botlab.avif"
+  hotkeys: ["v", "z"]
+  tags: ["building", "t1", "build", "factory", "bot"]
+
+- id: "vehicleplant"
+  name: "Vehicle Plant"
+  image: "vehicleplant.avif"
+  hotkeys: ["v", "x"]
+  tags: ["building", "t1", "build", "factory", "vehicle"]
+
+- id: "aircraftplant"
+  name: "Aircraft Plant"
+  image: "aircraftplant.avif"
+  hotkeys: ["v", "c"]
+  tags: ["building", "t1", "build", "factory", "aircraft"]
+
+- id: "shipyard"
+  name: "Shipyard"
+  image: "shipyard.avif"
+  hotkeys: ["v", "v"]
+  tags: ["building", "t1", "build", "factory", "naval"]
