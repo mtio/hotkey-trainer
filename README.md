@@ -12,3 +12,8 @@ npm i
 
 npm run dev
 ```
+
+
+## Contributing
+Fork the repo and do your development on your fork. When your changes are ready, make a PR into the `main` branch and request my review.
+
