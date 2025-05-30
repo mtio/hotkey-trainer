@@ -22,8 +22,8 @@
   <script setup lang="ts">
 import { ref, watch, computed, onMounted, onUnmounted } from 'vue'
 
-import { storeToRefs } from 'pinia'
-import { useHotkeyStore, HotkeyObject } from '../stores/useHotkeyStore'
+import { useHotkeyStore } from '../stores/useHotkeyStore'
+import type {HotkeyObject} from '../stores/useHotkeyStore'
 const hotkeyStore = useHotkeyStore()
 
 interface Props {

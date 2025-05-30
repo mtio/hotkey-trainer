@@ -1,5 +1,6 @@
 import { defineStore } from "pinia";
 import { ref, computed } from "vue";
+// @ts-ignore
 import objectsYaml from "../data/objects.yaml";
 
 export interface HotkeyObject {
