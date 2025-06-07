@@ -80,7 +80,7 @@
   tags: ["building", "t1", "combat", "laser", "light"]
 
 - id: "beam_laser_tower"
-  name: "Bean Laser Turret"
+  name: "Beam Laser Turret"
   image: "beamer.avif"
   hotkeys: ["x", "x"]
   tags: ["building", "t1", "combat", "laser"]

@@ -2,19 +2,7 @@ import { defineStore } from "pinia";
 import { ref, computed } from "vue";
 // @ts-ignore
 import objectsYaml from "../data/objects.yaml";
-
-export interface HotkeyObject {
-  id: string;
-  name: string;
-  image: string;
-  hotkeys: string[];
-  tags?: string[];
-}
-
-export interface Tag {
-  name: string;
-  selected: boolean;
-}
+import { type HotkeyObject, type Tag } from "./../models";
 
 export const useHotkeyStore = defineStore("hotkey", () => {
   /* -------- raw data -------- */
@@ -46,25 +34,49 @@ export const useHotkeyStore = defineStore("hotkey", () => {
 
   function success(object: HotkeyObject) {
     successes.value.push(object);
-    // const index = objects.value.findIndex((o) => o.id === object.id);
-    // if (index !== -1) {
-    //   successes.value.push(objects.value[index]);
-    //   objects.value.splice(index, 1);
-    // }
   }
+
   function failure(object: HotkeyObject) {
     failures.value.push(object);
-    // const index = objects.value.findIndex((o) => o.id === object.id);
-    // if (index !== -1) {
-    //   failures.value.push(objects.value[index]);
-    //   objects.value.splice(index, 1);
-    // }
   }
+
   function reset() {
-    // objects.value = [...successes.value, ...failures.value];
     successes.value = [];
     failures.value = [];
-    // tags.value.forEach((tag) => (tag.selected = true));
+  }
+
+  /**
+   * Populate `successes` and `failures` with the same random count N,
+   * where N is a uniformly‑random integer in the inclusive range [min, max].
+   * Useful for seeding the store during manual UI testing.
+   *
+   * @param min - minimum number of items to generate (≥ 0)
+   * @param max - maximum number of items to generate (≥ min)
+   */
+  function generateSuccessAndFailures(min: number, max: number) {
+    if (min < 0 || max < 0 || max < min) {
+      throw new Error("Invalid min/max values");
+    }
+
+    // clear any existing data
+    successes.value = [];
+    failures.value = [];
+
+    const total = Math.floor(Math.random() * (max - min + 1)) + min;
+
+    // fill successes
+    for (let i = 0; i < total; i++) {
+      const obj =
+        objects.value[Math.floor(Math.random() * objects.value.length)];
+      successes.value.push(obj);
+    }
+
+    // fill failures
+    for (let i = 0; i < total; i++) {
+      const obj =
+        objects.value[Math.floor(Math.random() * objects.value.length)];
+      failures.value.push(obj);
+    }
   }
 
   // Used to prevent same object being picked twice in a row
@@ -101,5 +113,6 @@ export const useHotkeyStore = defineStore("hotkey", () => {
     success,
     failure,
     reset,
+    generateSuccessAndFailures,
   };
 });
