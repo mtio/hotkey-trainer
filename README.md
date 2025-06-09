@@ -13,6 +13,7 @@ This is something I threw together for myself when learning the game for the fir
 - [ ] Listen for other key presses like "shift" to clear last pressed key, "esc" to reset the state, something to toggle hotkeys on off
 - [ ] Complete entries in `data/objects.yml` (would be nice to parse this from the main repo)
 - [ ] Add more tools like price comparisons, etc etc
+- [ ] Unit matchup testing (what unit should you build to counter X unit?)
 - [ ] ...
 
 ## Contributing
